@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'head': "url('Image/asset/background/bg-home.png')",
-        'heal': "url('Image/asset/background/bg-home.png')",
-        'food': "url('Image/asset/background/pexels-shkrabaanthony-5810677.jpg')"
+        'head': "url('Project-Sao/Image/asset/background/bg-home.png')",
+        'heal': "url('Project-Sao/Image/asset/background/bg-home.png')",
+        'food': "url('Project-Sao/Image/asset/background/pexels-shkrabaanthony-5810677.jpg')"
       },
       
     },
