@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAO | HOME</title>
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header id="topHeader" class="fixed top-0 flex z-10 right-0 left-0 justify-center ">
+    <div class="flex items-center justify-center gap-16 py-6 w-4/5 m-auto flex-wrap ">
+      <div>
+        <img id="logo" src="Image/asset/logo/Logo.png" alt="">
+      </div>
+      <div class="md:hidden block " onclick="showHideMenu()"><i class="bx bx-menu text-4xl"></i></div>
+      <div id="menu"
+        class="hidden md:flex flex-col-reverse md:flex-row justify-between basis-auto grow items-start md:items-center gap-5">
+        <nav>
+          <ul class="flex gap-8 flex-col md:flex-row ">
+            <li class="bg-[#DBDFD0] transition delay-130 duration-300 ease-in-out rounded-xl px-[15px] py-[5px]"><a
+                href="index.html" class="text-lg font-bold text-grey-600">Home</a></li>
+            <li class="hover:bg-[#DBDFD0] transition delay-130 duration-300 ease-in-out rounded-xl px-[15px] py-[5px]">
+              <a href="article.html" class="text-lg font-bold text-grey-600">About</a>
+            </li>
+            <li class="hover:bg-[#DBDFD0] transition delay-130 duration-300 ease-in-out rounded-xl px-[15px] py-[5px]">
+              <a href="menu.html" class="text-lg font-bold text-grey-600 ">Menu</a>
+            </li>
+            <li class="hover:bg-[#DBDFD0] transition delay-130 duration-300 ease-in-out rounded-xl px-[15px] py-[5px]">
+              <a href="blog.html" class="text-lg font-bold text-grey-600 ">Blog</a>
+            </li>
+            <li class="hover:bg-[#DBDFD0] transition delay-130 duration-300 ease-in-out rounded-xl px-[15px] py-[5px]">
+              <a href="Contact.html" class="text-lg font-bold text-grey-600 ">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div id="topHeader"
+          class="relative rounded-full bg-white shadow-xl ring-1 ring-gray-900/5 flex flex-row-reverse">
+          <div class="mx-auto max-w-md">
+            <form action="" class="relative mx-auto w-max">
+              <input type="search"
+                class="peer cursor-pointer relative z-10 h-12 w-12 rounded-full border bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-black focus:pl-16 focus:pr-4" />
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="absolute inset-y-0 my-auto h-8 w-12 border-r border-transparent stroke-gray-500 px-3.5 peer-focus:border-bl peer-focus:stroke-black"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </form>
+          </div>
+        </div>
+        <div>
+          <div class=""><a href="login.html"><button
+                class="px-10 py-2 rounded-full bg-[#AD343E] text-white font-bold hover:bg-[#4b1a1e] active:outline-double active:ring active:ring-red-300 transition delay-130 duration-300 ease-in-out">Login</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </header>
+  <!-- jumbotron -->
+  <main class="flex flex-col gap-4 bg-[#F9F9F7]">
+    <section id="jumbotron"
+      class="flex items-center flex-col justify-center text-white bg-head bg-cover min-h-screen w-full gap-[32px] pt-[129px]">
+      <div class="p md:px-0 w-screen md:w-[677px] text-center">
+        <h2 class="font-serif font-bold text-6xl md:text-[102px] leading-[98px]">Best food for your taste</h2>
+      </div>
+      <div class="w-screen md:w-[537px] text-center">
+        <p class="text-[20px]">Discover delectable cuisine and unforgettable moments in our welcoming, culinary haven.
+        </p>
+      </div>
+      <div class=" flex gap-[16px]">
+        <button
+          class="ring-1 ring-transparent py-4 px-6 rounded-full bg-[#AD343E] font-semibold hover:scale-105 active:bg-[#4b1a1e] active:outline-double active::ring active:ring-red-300 transition delay-130 duration-300 ease-in-out"><a
+            href="menu.html">Explore
+            Menu</a></button>
+        <button
+          class="ring-1 ring-white py-4 px-6 rounded-full font-semibold hover:scale-105 hover:bg-[#4b1a1e] active:outline-double active:ring active:ring-red-300 transition delay-130 duration-300 ease-in-out"><a
+            href="blog.html">Our Blog &
+            Article</a></button>
+      </div>
+    </section>
+    <!-- Pengarah Ke Menu -->
+    <section class="flex flex-col items-center bg-white min-h-screen w-full">
+      <div class="flex flex-col items-center justify-center text-center p-[112px] gap-[74px]">
+        <h2 class="font-bold text-[55px]">Browse Our Menu</h2>
+        <div class="flex flex-wrap justify-around gap-[34px]">
+          <!-- box1 -->
+          <div id="box1"
+            class="flex justify-center items-center flex-col min-h-[385px] w-[316px] ring-[1.5px] ring-[#DBDFD0] rounded-xl hover:shadow-lg hover:shadow-red-900 hover:scale-105 transition delay-130 duration-300 ease-in-out">
+            <div class="rounded-full scale-[100px]">
+              <img src="Image/asset/logo/icon-1-home.png" alt="">
+            </div>
+            <div class="flex flex-col p-8 gap-[15px]">
+              <h2 class="font-bold text-[24px]">Breakfast</h2>
+              <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
+            </div>
+            <a href="menu.html" class="font-bold font-sans text-[16px] text-[#AD343E]">Explore Menu</a>
+          </div>
+          <!-- box2 -->
+          <div id="box2"
+            class="flex justify-center items-center flex-col min-h-[385px] w-[316px] ring-[1.5px] ring-[#DBDFD0] rounded-xl hover:shadow-lg hover:shadow-red-900 hover:scale-105 transition delay-130 duration-300 ease-in-out">
+            <div class="rounded-full scale-[100px]">
+              <img src="Image/asset/logo/icon-2-home.png" alt="">
+            </div>
+            <div class="flex flex-col p-8 gap-[15px]">
+              <h2 class="font-bold text-[24px]">Main Dishes</h2>
+              <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
+            </div>
+            <a href="menu.html" class="font-bold font-sans text-[16px] text-[#AD343E]">Explore Menu</a>
+          </div>
+          <!-- box3 -->
+          <div id="box3"
+            class="flex justify-center items-center flex-col min-h-[385px] w-[316px] ring-[1.5px] ring-[#DBDFD0] rounded-xl hover:shadow-lg hover:shadow-red-900 hover:scale-105 transition delay-130 duration-300 ease-in-out">
+            <div class="rounded-full scale-[100px]">
+              <img src="Image/asset/logo/icon-3-home.png" alt="">
+            </div>
+            <div class="flex flex-col p-8 gap-[15px]">
+              <h2 class="font-bold text-[24px]">Drinks</h2>
+              <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
+            </div>
+            <a href="menu.html" class="font-bold font-sans text-[16px] text-[#AD343E]">Explore Menu</a>
+          </div>
+          <!-- box4 -->
+          <div id="box4"
+            class="flex justify-center items-center flex-col min-h-[385px] w-[316px] ring-[1.5px] ring-[#DBDFD0] rounded-xl hover:shadow-lg hover:shadow-red-900 hover:scale-105 transition delay-130 duration-300 ease-in-out">
+            <div class="rounded-full scale-[100px]">
+              <img src="Image/asset/logo/icon-4-home.png" alt="">
+            </div>
+            <div class="flex flex-col p-8 gap-[15px]">
+              <h2 class="font-bold text-[24px]">Desserts</h2>
+              <p>In the new era of technology we look in the future with certainty and pride for our life.</p>
+            </div>
+            <a href="menu.html" class="font-bold font-sans text-[16px] text-[#AD343E]">Explore Menu</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- setengah -->
+    <section id="jumbotron" class="bg-[#F9F9F7] bg-cover min-h-screen w-full ">
+      <div class="bg-[#F9F9F7] bg-cover min-h-screen w-full flex justify-center items-center">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-20 md:w-4/5 m-auto md:gap-10">
+          <div class="flex w-screen text-center justify-center md:w-1/3  flex-col gap-[35px] px-4">
+            <h2
+              class=" text-5xl text-center md:text-start md:text-5xl font-bold font-serif tracking-tight leading-[62px]">
+              We provide healthy food recipes for
+              your family.</h2>
+            <p class="text-[#2C2F24] font-semibold">Our story began with a vision to create a unique dining experience
+              that merges fine
+              dining, exceptional service, and a vibrant ambiance. Rooted in city's rich culinary culture, we aim to
+              honor our local roots while infusing a global palate.</p>
+            <p class="text-[#414536]">
+              At place, we believe that dining is not just about food, but also about the overall experience. Our staff,
+              renowned for their warmth and dedication, strives to make every visit an unforgettable event.
+            </p>
+            <a href="article.html">
+              <button
+                class="bg-transparent flex items-start justify-center ring-2 ring-black p-4 w-[159px] rounded-full hover:scale-105 active:bg-[#4b1a1e] active:outline-double active:ring-2 active:ring-black active:text-white transition delay-130 duration-300 ease-in-out">More
+                About Us
+              </button>
+            </a>
+          </div>
+          <div class="w-full md:w-1/2">
+            <img src="Image/asset/img/img-1-home.png" alt="" class="md:w-[90%]">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Batas -->
+    <section class=" bg-cover min-h-screen w-full">
+      <div class="flex flex-col items-center justify-center text-center gap-[70px] py-10">
+        <div class="w-full h-[640px] bg-fixed bg-cover bg-center bg-no-repeat bg-food">
+        </div>
+        <!-- stengah -->
+        <div class="flex gap-0">
+          <!-- boxes-1 -->
+          <div id="boxes1">
+            <div class="flex flex-row justify-between w-1/2 m-auto gap-4">
+              <div class="w-1/4">
+                <img src="Image/asset/logo/restaurant-menu 1.png" alt="" class="w-full ">
+              </div>
+              <div class=" flex flex-col justify-center gap-2 text-start">
+                <h4 class="font-serif text-[24px] font-extrabold tracking-tighter">Easy to learn</h4>
+                <p class="text-[18px]">In the new era of technology we look in the future with certainty life.</p>
+              </div>
+            </div>
+          </div>
+          <!-- boxes-2 -->
+          <div id="boxes2">
+            <div class="flex flex-row justify-between w-1/2 m-auto gap-4">
+              <div class="w-1/4">
+                <img src="Image/asset/logo/restaurant-menu 2.png" alt="" class="w-full ">
+              </div>
+              <div class=" flex flex-col justify-center gap-2 text-start">
+                <h4 class="font-serif text-[24px] font-extrabold tracking-tighter">Easy to learn</h4>
+                <p class="text-[18px]">In the new era of technology we look in the future with certainty life.</p>
+              </div>
+            </div>
+          </div>
+          <!-- boxes-3 -->
+          <div id="boxes3">
+            <div class="flex flex-row justify-between w-1/2 mx-auto gap-4">
+              <div class="w-1/4">
+                <img src="Image/asset/logo/restaurant-menu 3.png" alt="" class="w-full ">
+              </div>
+              <div class=" flex flex-col justify-center gap-2 text-start ">
+                <h4 class="font-serif text-[24px] font-extrabold tracking-tighter">Easy to learn</h4>
+                <p class="text-[18px]">In the new era of technology we look in the future with certainty life.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Batas -->
+    <section class="flex flex-col w-full justify-between py-[106px]">
+      <div class="flex justify-center pb-[66px]">
+        <h2 class="font-bold text-[55px]">Recommended</h2>
+      </div>
+      <div class="scale-50 md:scale-100 flex justify-between flex-nowrap gap-[36px] z-0   ">
+        <div
+          class="flex flex-col gap-4 w-[336px] min-h-[384px] bg-white ring-1 ring-[#F9F9F7] rounded-[12px] shadow-xl">
+          <div class="">
+            <img src="Image/asset/RecommendationImage.png" alt="" class="bg-contain w-full h-[200px] rounded-t-[12px]">
+          </div>
+          <div class="pl-2">
+            <p>Sweet and spicy bulgogi beef with lots of vegetables</p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-4 w-[336px] min-h-[384px] bg-white ring-1 ring-[#F9F9F7] rounded-[12px] shadow-xl">
+          <div class="">
+            <img src="Image/asset/RecommendationImage-1.png" alt="" class="bg-contain w-full rounded-t-[12px]">
+          </div>
+          <div class="pl-2">
+            <p>Sweet and spicy bulgogi beef with lots of vegetables</p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-4 w-[336px] min-h-[384px] bg-white ring-1 ring-[#F9F9F7] rounded-[12px] shadow-xl">
+          <div class="">
+            <img src="Image/asset/RecommendationImage-2.png" alt="" class="bg-contain w-full rounded-t-md">
+          </div>
+          <div class="pl-2">
+            <p>Sweet and spicy bulgogi beef with lots of vegetables</p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-4 w-[336px] min-h-[384px] bg-white ring-1 ring-[#F9F9F7] rounded-[12px] shadow-xl">
+          <div class="">
+            <img src="Image/asset/RecommendationImage-3.png" alt="" class="bg-contain w-full rounded-t-[12px]">
+          </div>
+          <div class="pl-2">
+            <p>Sweet and spicy bulgogi beef with lots of vegetables</p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-4 w-[336px] min-h-[384px] bg-white ring-1 ring-[#F9F9F7] rounded-[12px] shadow-xl">
+          <div class="">
+            <img src="Image/asset/RecommendationImage-4.png" alt="" class="bg-contain w-full rounded-[12px]">
+          </div>
+          <div class="pl-2">
+            <p>Sweet and spicy bulgogi beef with lots of vegetables</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Batas -->
+    <section class="flex flex-col justify-start md:justify-between py-[106px]">
+      <div class="flex justify-center pb-[66px]">
+        <h2 class="font-bold font-serif text-[55px]">What Our Customers Say</h2>
+      </div>
+      <!-- boxing1 -->
+      <div id="boxing1" class="flex justify-start md:justify-center scale-50 md:scale-100 gap-2 md:gap-4">
+        <div
+          class="flex flex-col items-center gap-4 w-[346px] min-h-[384px] bg-[#F9F9F7] ring-1 ring-[#F9F9F7] rounded-[12px] shadow-xl">
+          <div class="flex pl-3 pt-4 pr-5 flex-col gap-[24px] w-[316px]">
+            <h2 class="text-[24px] font-semibold font-sans text-[#AD343E]">“The best restaurant”</h2>
+            <p>Last night, we dined at place and were simply blown away. From the moment we stepped in, we were
+              enveloped in an inviting atmosphere and greeted with warm smiles.</p>
+            <div class="w-full h-[2px] rounded-full bg-[#DBDFD0]"></div>
+            <div class="flex gap-[20px] items-center w-full mt-[15px]">
+              <img src="Image/asset/orang/Ellipse 19.png" alt="" class="rounded-full">
+              <div class="flex flex-col">
+                <h4 class="text-lg font-bold">Sophire Robson</h4>
+                <p class="text-gray-400 text-md">Los Angeles, CA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- block -->
+        <!-- boxing2 -->
+        <div
+          class="flex flex-col items-center gap-4 w-[346px] min-h-[384px] bg-[#F9F9F7] ring-1 ring-[#F9F9F7] rounded-[12px] shadow-xl">
+          <div class="flex pl-3 pt-4 pr-5 flex-col gap-[24px] w-[316px]">
+            <h2 class="text-[24px] font-semibold font-sans text-[#AD343E]">“Simply delicious”</h2>
+            <p>Place exceeded my expectations on all fronts. The ambiance was cozy and relaxed, making it a perfect
+              venue for our anniversary dinner. Each dish was prepared and beautifully presented.</p>
+            <div class="w-full h-[2px] rounded-full bg-[#DBDFD0]"></div>
+            <div class="flex gap-[20px] items-center w-full mt-[15px]">
+              <img src="Image/asset/orangImage.png" alt="" class="rounded-full">
+              <div class="flex flex-col">
+                <h4 class="text-lg font-bold">Matt Cannon</h4>
+                <p class="text-gray-400 text-md">San Diego, CA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- block -->
+        <!-- boxing3 -->
+        <div
+          class="flex flex-col items-center gap-4 w-[346px] min-h-[384px] bg-[#F9F9F7] ring-1 ring-[#F9F9F7] rounded-[12px] shadow-xl">
+          <div class="flex pl-3 pt-4 pr-5 flex-col gap-[24px] w-[326px]">
+            <h2 class="text-[24px] font-semibold font-sans text-[#AD343E]">“One of a kind restaurant”</h2>
+            <p>The culinary experience at place is first to none. The atmosphere is vibrant, the food - nothing
+              short of extraordinary. The food was the highlight of our evening. Highly recommended. </p>
+            <div class="w-full h-[2px] rounded-full bg-[#DBDFD0]"></div>
+            <div class="flex gap-[20px] items-center w-full mt-[15px]">
+              <img src="Image/asset/orangImage-1.png" alt="" class="rounded-full">
+              <div class="flex flex-col">
+                <h4 class="text-lg font-bold">Andy Smith</h4>
+                <p class="text-gray-400 text-md">San Francisco, CA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- block -->
+      </div>
+    </section>
+    <!-- Batas -->
+    <section class="w-full py-[137px] px-0 md:px-[152px] bg-[#F9F9F7]">
+      <div class="flex flex-col gap-[64px] justify-center">
+        <div class="flex justify-between px-[152px]">
+          <h2 class="text-[55px]">Our Blog & Articles</h2>
+          <div class="flex justify-center items-center">
+            <a href="blog.html">
+              <button
+                class="ring-1 ring-transparent py-[18px] px-6 rounded-full bg-[#AD343E] font-semibold hover:scale-105 active:bg-[#4b1a1e] active:outline-double active::ring active:ring-red-300 transition delay-130 duration-300 ease-in-out text-white">Read
+                All Article</button>
+
+            </a>
+          </div>
+        </div>
+        <!-- boxies -->
+        <div class="flex flex-col md:flex-row gap-[24px] justify-center">
+          <!-- solo-box -->
+          <a href="article.html">
+            <div class=" w-[636px] bg-white rounded-[12px] shadow-lg">
+              <img src="Image/asset/img/img-3-home.png" alt="">
+              <div class="flex flex-col gap-[40px] w-[568px] pt-[50px] pb-[15px] px-[35px]">
+                <p class="text-[#737865] font-sans">January 3,2024</p>
+                <h4 class="font-sans font-medium text-[#2C2F24] text-[34px] leading-[36px]">Secret tips & tricks for
+                  preparing perfect
+                  burgers & pizzas when at home</h4>
+              </div>
+          </a>
+        </div>
+        <!-- little-box  1-->
+        <div class="flex flex-col gap-[24px]">
+          <div class="flex flex-wrap gap-[24px]">
+            <div class="w-[306px] bg-white rounded-[12px] shadow-lg">
+              <a href="article.html">
+                <img src="Image/asset/img/img-4-home.png" alt="">
+                <div class="flex flex-col gap-[15px] w-[256px] pt-[30px] pb-[15px] px-[25px]">
+                  <p class="text-[#737865] font-sans text-[14px]">January 3,2024</p>
+                  <h4 class="font-sans text-[#2C2F24] text-[20px] font-medium">How to prepare the perfect french fries
+                    in an air fryer</h4>
+                </div>
+            </div>
+            </a>
+            <div class="w-[306px] bg-white rounded-[12px] shadow-lg">
+              <a href="article.html">
+                <img src="Image/asset/img/img-5-home.png" alt="">
+                <div class="flex flex-col gap-[15px] w-[286px] pt-[30px] pb-[15px] px-[25px]">
+                  <p class="text-[#737865] font-sans text-[14px]">January 3,2024</p>
+                  <h4 class="font-sans text-[#2C2F24] text-[20px] font-medium">How to prepare delicious chicken tenders
+                  </h4>
+                </div>
+            </div>
+            </a>
+          </div>
+          <div class="flex flex-wrap gap-[24px]">
+            <div class="w-[306px] bg-white rounded-[12px] shadow-lg">
+              <a href="article.html">
+                <img src="Image/asset/img/img-6-home.png" alt="">
+                <div class="flex flex-col gap-[15px] w-[286px] pt-[30px] pb-[15px] px-[25px]">
+                  <p class="text-[#737865] font-sans text-[14px]">January 3,2024</p>
+                  <h4 class="font-sans text-[#2C2F24] text-[20px] font-medium">7 delicious cheesecake recipes you can
+                    prepare</h4>
+                </div>
+            </div>
+            </a>
+            <div class="w-[306px] bg-white rounded-[12px] shadow-lg">
+              <a href="article.html">
+                <img src="Image/asset/img/img-7-home.png" alt="">
+                <div class="flex flex-col gap-[15px] w-[286px] pt-[30px] pb-[35px] px-[25px]">
+                  <p class="text-[#737865] font-sans text-[14px]">January 3,2024</p>
+                  <h4 class="font-sans text-[#2C2F24] text-[20px] font-medium">5 great pizza restaurants you should
+                    visit this city</h4>
+                </div>
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer class="pt-[120px] pb-[85px] md:px-[152px] bg-[#474747]">
+    <div class="flex flex-col gap-[100px] w-full items-center">
+      <!-- box-top -->
+      <div class="flex flex-row flex-wrap gap-2 md:justify-between w-[1200px]">
+        <div id="box-in" class="flex flex-col md:flex-row gap-[135px]">
+          <!-- SAO -->
+          <div id="logo" class="flex flex-col px-10 text-center md:text-start md:px-0 gap-[30px]">
+            <div class="px-16 md:px-0"><img src="Image/asset/logo/footer.png" alt="logo" class="w-[212px] h-[55px]">
+            </div>
+            <div class="w-[293px]">
+              <p class="text-[#ADB29E] font-sans">In the new era of technology we look a in the future with certainty
+                and
+                pride to for our company and.</p>
+            </div>
+            <div class="flex gap-[12px] px-16 md:px-0">
+              <div class="rounded-full"><a href="">
+                  <img src="Image/asset/logo/foot-1.png" alt="">
+                </a></div>
+              <div class="rounded-full"><a href="">
+                  <img src="Image/asset/logo/foot-2.png" alt="">
+                </a></div>
+              <div class="rounded-full"><a href="">
+                  <img src="Image/asset/logo/foot-3.png" alt="">
+                </a></div>
+              <div class="rounded-full"><a href="">
+                  <img src="Image/asset/logo/foot-4.png" alt="">
+                </a></div>
+            </div>
+          </div>
+          <!-- end -->
+          <div class="flex w-[330px] justify-around md:justify-between">
+            <!-- foot-nav -->
+            <div id="nav1" class="flex flex-col gap-[40px]">
+              <div class="text-white">
+                <h5 class="font-sans font-bold">
+                  Pages
+                </h5>
+              </div>
+              <div class="w-[61px]">
+                <nav class="text-[#DBDFD0] ">
+                  <ul class="flex flex-col space-y-[20px]">
+                    <li><a href="" cla>Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Menu</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Delivery</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <!-- End -->
+            <!-- foot-nav2 -->
+            <div id="nav1" class="flex flex-col gap-[40px]">
+              <div class="text-white">
+                <h5 class="font-sans font-bold">
+                  Utility Pages
+                </h5>
+              </div>
+              <div class="w-[149px]">
+                <nav class="text-[#DBDFD0] ">
+                  <ul class="flex flex-col space-y-[20px]">
+                    <li><a href="" class="hover:ring-1 ring-black">Start Here</a></li>
+                    <li><a href="">Styleguide</a></li>
+                    <li><a href="">Password Protected</a></li>
+                    <li><a href="">404 Not Found</a></li>
+                    <li><a href="">Licenses</a></li>
+                    <li><a href="">Changelog</a></li>
+                    <li><a href="">View More</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <!-- End -->
+          </div>
+          <!-- End -->
+          <div class="flex flex-col w-[405px] gap-[40px]">
+            <div class="text-white">
+              <h5 class="font-sans font-bold">Follow Us On Instagram</h5>
+            </div>
+            <div class="flex flex-wrap gap-1 md:gap-[15px]">
+              <div><img src="Image/asset/img/img-8-home.png" alt=""></div>
+              <div><img src="Image/asset/img/img-9-home.png" alt=""></div>
+              <div><img src="Image/asset/img/img-10-home.png" alt=""></div>
+              <div><img src="Image/asset/img/img-11-home.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End -->
+      <div class="w-full flex justify-center">
+        <h4 class="text-[#ADB29E] font-sans">Copyright © 2024 SAO</h4>
+      </div>
+    </div>
+  </footer>
+</body>
+<script>
+  var xstatus = false;
+  window.onscroll = function () {
+    menu()
+  };
+
+  function menu() {
+    if (document.documentElement.scrollTop > 20) {
+      document.getElementById("topHeader").classList.add("bg-gray-200");
+      document.getElementById("topHeader").classList.add("bg-blend-color");
+      document.getElementById("topHeader").classList.remove("shadow-lg");
+    } else {
+      if (!xstatus && document.documentElement.scrollTop < 20) {
+        document.getElementById("topHeader").classList.remove("bg-gray-200");
+        document.getElementById("topHeader").classList.remove("shadow-lg");
+
+      }
+    }
+  };
+
+  var xstatus = false;
+
+  function showHideMenu() {
+    if (!xstatus) {
+      document.getElementById("menu").classList.remove("hidden");
+      document.getElementById("menu").classList.add("flex");
+      document.getElementById("topHeader").classList.add("bg-white");
+      if (document.documentElement.scrollTop < 20) {
+        document.getElementById("topHeader").classList.add("bg-white");
+        document.getElementById("topHeader").classList.add("shadow-lg");
+      }
+      xstatus = true;
+    } else {
+      document.getElementById("menu").classList.remove("flex");
+      document.getElementById("menu").classList.add("hidden");
+      if (document.documentElement.scrollTop < 20) {
+        document.getElementById("topHeader").classList.remove("bg-white");
+        document.getElementById("topHeader").classList.remove("shadow-lg");
+      }
+      xstatus = false;
+    }
+  }
+</script>
+
+</html>

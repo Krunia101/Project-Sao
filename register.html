@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+    <link rel="stylesheet" href="output.css">
+    <script defer src="validasi.js"></script>
+
+</head>
+<body class="flex bg-white">
+    <div class="h-full w-1/2 bg-login bg-top rounded-xl bg-no-repeat bg-cover overflow-hidden rounded-l-lg rounded-r-lg p-4">
+        <img src="Image/asset/img/Login Art4.png " class="w-full h-full" alt="">
+    </div>
+    <div class="bg-white h-full w-1/2 flex justify-center items-center  ">
+        <div class="h-4/5 w-[65%] flex flex-col justify-between ">
+            <div class="flex justify-start"><h1 class="text-2xl font-bold text-black">Welcome to SAO 👋</h1></div>
+            <form action="../validasi/index.html" method="POST">
+                <div class="">
+                    <p class="text-lg text-black m-4">Name</p>
+                    <input id="name" type="text" name="name" placeholder="name" required class="w-full h-12 outline-none text-lg text-black px-6 bg-transparent border border-[#C9DBD5] rounded-lg " placeholder="Name">
+                </div>
+                <div class="">
+                    <p class="text-lg text-black m-4">Email</p>
+                    <input id="username" type="email" name="email" placeholder="Username" required class="w-full h-12 outline-none text-lg text-black px-6 bg-transparent border border-[#C9DBD5] rounded-lg " placeholder="Email">
+                </div>
+                <div class="">
+                    <p class="text-lg text-black m-4">Phone No.</p>
+                    <input type="tel" class="w-full h-12 outline-none text-lg text-black px-6 bg-transparent border border-[#C9DBD5] rounded-lg " placeholder="+91 956 8972 525">
+                </div>
+                <div class="">
+                    <p class="text-lg text-black m-4">Address</p>
+                    <input id="Address" type="text" name="address" placeholder="Address" required class="w-full h-12 outline-none text-lg text-black px-6 bg-transparent border border-[#C9DBD5] rounded-lg " placeholder="Address">
+                </div>
+                <div class="">
+                    <p class="text-lg text-black m-4">Password</p>
+                    <input id="password" type="password" name="password" placeholder="Password" required class="w-full h-12 outline-none text-lg text-black px-6 bg-transparent border border-[#C9DBD5] rounded-lg " placeholder="Password">
+                </div>
+                <div class="">
+                    <p class="text-lg text-black m-4">Confirm Password</p>
+                    <input id="confirm-password" type="password" name="confirm-password" placeholder="Confirm Password" required class="w-full h-12 outline-none text-lg text-black px-6 bg-transparent border border-[#C9DBD5] rounded-lg " placeholder="Confirm Password">
+                </div>
+                <div class="mt-8 flex justify-center">
+                    <input type="submit" value="Sign up" class="p-2 w-full bg-black text-2xl font-bold text-white rounded-lg">
+                </div>
+            </form>
+            <div class="flex justify-center mt-4">
+                <p class="text-black text-sm">Already have an account? <a href="login.html" class="text-[#CEA35A]">Sign in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

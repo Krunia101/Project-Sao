@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAO | MENU</title>
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+  <style>
+    .active-filter {
+      background-color: #AD343E !important;
+      color: white !important;
+    }
+  </style>
+</head>
+
+<body class="bg-[#F9F9F7]">
+  <header id="topHeader" class="fixed top-0 flex z-20 right-0 left-0 justify-center ">
+    <div class="flex items-center justify-center gap-16 py-6 w-4/5 m-auto flex-wrap ">
+      <div>
+        <img id="logo" src="Image/asset/logo/Logo.png" alt="">
+      </div>
+      <div class="md:hidden block " onclick="showHideMenu()"><i class="bx bx-menu text-4xl"></i></div>
+      <div id="menu"
+        class="hidden md:flex flex-col-reverse md:flex-row justify-between basis-auto grow items-start md:items-center gap-5">
+        <nav>
+          <ul class="flex gap-8 flex-col md:flex-row ">
+            <li class="hover:bg-[#DBDFD0] transition delay-130 duration-300 ease-in-out rounded-xl px-[15px] py-[5px]"><a
+                href="index.html" class="text-lg font-bold text-grey-600">Home</a></li>
+            <li class="hover:bg-[#DBDFD0] transition delay-130 duration-300 ease-in-out rounded-xl px-[15px] py-[5px]">
+              <a href="article.html"
+                class="text-lg font-bold text-grey-600 ">About</a>
+            </li>
+            <li class="bg-[#DBDFD0] transition delay-130 duration-300 ease-in-out rounded-xl px-[15px] py-[5px]">
+              <a href="menu.html"
+                class="text-lg font-bold text-grey-600 ">Menu</a>
+            </li>
+            <li class="hover:bg-[#DBDFD0] transition delay-130 duration-300 ease-in-out rounded-xl px-[15px] py-[5px]">
+              <a href="blog.html"
+                class="text-lg font-bold text-grey-600 ">Blog</a>
+            </li>
+            <li class="hover:bg-[#DBDFD0] transition delay-130 duration-300 ease-in-out rounded-xl px-[15px] py-[5px]">
+              <a href="Contact.html"
+                class="text-lg font-bold text-grey-600 ">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div id="topHeader"
+          class="relative rounded-full bg-white shadow-xl ring-1 ring-gray-900/5 flex flex-row-reverse">
+          <div class="mx-auto max-w-md">
+            <form action="" class="relative mx-auto w-max">
+              <input type="search"
+                class="peer cursor-pointer relative z-10 h-12 w-12 rounded-full border bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-black focus:pl-16 focus:pr-4" />
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="absolute inset-y-0 my-auto h-8 w-12 border-r border-transparent stroke-gray-500 px-3.5 peer-focus:border-bl peer-focus:stroke-black"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </form>
+          </div>
+        </div>
+        <div>
+          <div class=""><a href="login.html"><button
+                class="px-10 py-2 rounded-full bg-[#AD343E] text-white font-bold hover:bg-[#4b1a1e] active:outline-double active:ring active:ring-red-300 transition delay-130 duration-300 ease-in-out">Login</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </header>
+    <main class="flex flex-col bg-[#F9F9F7] gap-20 pb-20">
+    <section id="jumbotron" class="flex items-center flex-col justify-center w-screen md:w-full gap-[32px]  pt-[129px]">
+      <div class="p md:px-0 w-screen md:w-[677px] text-center">
+        <h2 class="font-serif font-bold text-6xl md:text-[102px] leading-[98px]">Our Menu</h2>
+      </div>
+      <div class="w-screen md:w-[600px] text-center">
+        <p class="text-[20px]">We consider all the drivers of change gives you the components you need to change to
+          create a truly happens.
+        </p>
+      </div>
+      <div class="flex flex-wrap gap-[15px] md:w-full justify-center">
+        <button id="filter-all" class="ring-1 ring-black py-4 px-10 rounded-full font-semibold active-filter">All</button>
+        <button id="filter-breakfast" class="ring-1 ring-black py-4 px-6 rounded-full font-semibold">Breakfast</button>
+        <button id="filter-main" class="ring-1 ring-black py-4 px-6 rounded-full font-semibold">Main</button>
+        <button id="filter-drinks" class="ring-1 ring-black py-4 px-6 rounded-full font-semibold">Drinks</button>
+        <button id="filter-desserts" class="ring-1 ring-black py-4 px-6 rounded-full font-semibold">Desserts</button>
+      </div>
+    </section>
+    <section class="flex flex-wrap w-full px-[152px] justify-center gap-[30px] hover:shadow-lg">
+      <!-- boxies -->
+      <div class="menu-item breakfast w-[306px] bg-white rounded-[12px] shadow-lg hover:shadow-red-600 hover:scale-105 transition delay-150 duration-300 ease-in-out">
+        <a href="detail.html">
+          <img src="Image/asset/img/img-1-menu.png" alt="">
+          <div class="flex flex-col items-center gap-[15px] w-[286px] pt-[30px] pb-[35px] px-7">
+            <h4 class="font-sans text-[#2C2F24] text-[20px] font-medium">Fried Eggs</h4>
+            <p class="text-[#737865] text-center font-sans text-[14px]">Made with eggs, lettuce, salt, oil and other
+              ingredients.</p>
+          </div>
+        </a>
+      </div>
+      <!-- boxies end -->
+      <!-- boxies -->
+      <div class="menu-item main w-[306px] bg-white rounded-[12px] shadow-lg hover:shadow-red-600 hover:scale-105 transition delay-150 duration-300 ease-in-out">
+        <a href="detail.html">
+          <img src="Image/asset/img/img-2-menu.png" alt="">
+          <div class="flex flex-col items-center gap-[15px] w-[286px] pt-[30px] pb-[35px] px-7">
+            <h4 class="font-sans text-[#2C2F24] text-[20px] font-medium">Hawaiian Pizza</h4>
+            <p class="text-[#737865] text-center font-sans text-[14px]">Made with eggs, lettuce, salt, oil and other
+              ingredients.</p>
+          </div>
+        </a>
+      </div>
+      <!-- boxies end -->
+      <!-- boxies -->
+      <div class="menu-item drinks w-[306px] bg-white rounded-[12px] shadow-lg hover:shadow-red-600 hover:scale-105 transition delay-150 duration-300 ease-in-out">
+        <a href="detail.html">
+          <img src="Image/asset/img/img-3-menu.png" alt="">
+          <div class="flex flex-col items-center gap-[15px] w-[286px] pt-[30px] pb-[35px] px-7 ">
+            <h4 class="font-sans text-[#2C2F24] text-[20px] font-medium">Martinez Cocktail</h4>
+            <p class="text-[#737865] text-center font-sans text-[14px]">Made with water, lemon, sugar, grape and other
+              ingredients.</p>
+          </div>
+        </a>
+      </div>
+      <!-- boxies end -->
+      <!-- boxies -->
+      <div class="menu-item desserts w-[306px] bg-white rounded-[12px] shadow-lg hover:shadow-red-600 hover:scale-105 transition delay-150 duration-300 ease-in-out">
+        <a href="detail.html">
+          <img src="Image/asset/img/img-5-menu.png" alt="">
+          <div class="flex flex-col items-center gap-[15px] w-[286px] pt-[30px] pb-[35px] px-7">
+            <h4 class="font-sans text-[#2C2F24] text-[20px] font-medium">Black Forest Cake</h4>
+            <p class="text-[#737865] text-center font-sans text-[14px]">Made with water, lemon, sugar, grape and other
+              ingredients.</p>
+          </div>
+        </a>
+      </div>
+      <!-- boxies end -->
+      <!-- boxies -->
+      <div class="menu-item drinks w-[306px] bg-white rounded-[12px] shadow-lg hover:shadow-red-600 hover:scale-105 transition delay-150 duration-300 ease-in-out">
+        <a href="detail.html">
+          <img src="Image/asset/img/img-6-menu.png" alt="">
+          <div class="flex flex-col items-center gap-[15px] w-[286px] pt-[30px] pb-[35px] px-7">
+            <h4 class="font-sans text-[#2C2F24] text-[20px] font-medium">Mint Lemonade</h4>
+            <p class="text-[#737865] text-center font-sans text-[14px]">Made with water, lemon, sugar, grape and other
+              ingredients.</p>
+          </div>
+        </a>
+      </div>
+      <!-- boxies end -->
+      <!-- boxies -->
+      <div class="menu-item drinks w-[306px] bg-white rounded-[12px] shadow-lg hover:shadow-red-600 hover:scale-105 transition delay-150 duration-300 ease-in-out">
+        <a href="detail.html">
+          <img src="Image/asset/img/img-7-menu.png" alt="">
+          <div class="flex flex-col items-center gap-[15px] w-[286px] pt-[30px] pb-[35px] px-7">
+            <h4 class="font-sans text-[#2C2F24] text-[20px] font-medium">Chocolate Icecream</h4>
+            <p class="text-[#737865] text-center font-sans text-[14px]">Made with water, lemon, sugar, grape and other
+              ingredients.</p>
+          </div>
+        </a>
+      </div>
+      <!-- boxies end -->
+      <!-- boxies -->
+      <div class="menu-item main w-[306px] bg-white rounded-[12px] shadow-lg hover:shadow-red-600 hover:scale-105 transition delay-150 duration-300 ease-in-out">
+        <a href="detail.html">
+          <img src="Image/asset/img/img-8-menu.png" alt="">
+          <div class="flex flex-col items-center gap-[15px] w-[286px] pt-[30px] pb-[35px] px-7">
+            <h4 class="font-sans text-[#2C2F24] text-[20px] font-medium">Cheese Burger</h4>
+            <p class="text-[#737865] text-center font-sans text-[14px]">Made with water, lemon, sugar, grape and other
+              ingredients.</p>
+          </div>
+        </a>
+      </div>
+      <!-- boxies end -->
+            <!-- boxies -->
+            <div class="menu-item main w-[306px] bg-white rounded-[12px] shadow-lg hover:shadow-red-600 hover:scale-105 transition delay-150 duration-300 ease-in-out">
+              <a href="detail.html">
+                <img src="Image/asset/img/img-9-menu.png" alt="">
+                <div class="flex flex-col items-center gap-[15px] w-[286px] pt-[30px] pb-[35px] px-7">
+                  <h4 class="font-sans text-[#2C2F24] text-[20px] font-medium">Chocolate Icecream</h4>
+                  <p class="text-[#737865] text-center font-sans text-[14px]">Made with water, lemon, sugar, grape and other
+                    ingredients.</p>
+                </div>
+              </a>
+            </div>
+            <!-- boxies end -->
+      
+    </section>
+  </main>
+  <footer class="pt-[120px] pb-[85px] md:px-[152px] bg-[#474747]">
+    <div class="flex flex-col gap-[100px] w-full items-center">
+      <!-- box-top -->
+      <div class="flex flex-row flex-wrap gap-2 md:justify-between w-[1200px]">
+        <div id="box-in" class="flex flex-col md:flex-row gap-[135px]">
+          <!-- SAO -->
+          <div id="logo" class="flex flex-col px-10 text-center md:text-start md:px-0 gap-[30px]">
+            <div class="px-16 md:px-0"><img src="Image/asset/logo/footer.png" alt="logo" class="w-[212px] h-[55px]">
+            </div>
+            <div class="w-[293px]">
+              <p class="text-[#ADB29E] font-sans">In the new era of technology we look a in the future with certainty
+                and
+                pride to for our company and.</p>
+            </div>
+            <div class="flex gap-[12px] px-16 md:px-0">
+              <div class="rounded-full"><a href="">
+                  <img src="Image/asset/logo/foot-1.png" alt="">
+                </a></div>
+              <div class="rounded-full"><a href="">
+                  <img src="Image/asset/logo/foot-2.png" alt="">
+                </a></div>
+              <div class="rounded-full"><a href="">
+                  <img src="Image/asset/logo/foot-3.png" alt="">
+                </a></div>
+              <div class="rounded-full"><a href="">
+                  <img src="Image/asset/logo/foot-4.png" alt="">
+                </a></div>
+            </div>
+          </div>
+          <!-- end -->
+          <div class="flex w-[330px] justify-around md:justify-between">
+            <!-- foot-nav -->
+            <div id="nav1" class="flex flex-col gap-[40px]">
+              <div class="text-white">
+                <h5 class="font-sans font-bold">
+                  Pages
+                </h5>
+              </div>
+              <div class="w-[61px]">
+                <nav class="text-[#DBDFD0] ">
+                  <ul class="flex flex-col space-y-[20px]">
+                    <li><a href="" cla>Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Menu</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Delivery</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <!-- End -->
+            <!-- foot-nav2 -->
+            <div id="nav1" class="flex flex-col gap-[40px]">
+              <div class="text-white">
+                <h5 class="font-sans font-bold">
+                  Utility Pages
+                </h5>
+              </div>
+              <div class="w-[149px]">
+                <nav class="text-[#DBDFD0] ">
+                  <ul class="flex flex-col space-y-[20px]">
+                    <li><a href="" class="hover:ring-1 ring-black">Start Here</a></li>
+                    <li><a href="">Styleguide</a></li>
+                    <li><a href="">Password Protected</a></li>
+                    <li><a href="">404 Not Found</a></li>
+                    <li><a href="">Licenses</a></li>
+                    <li><a href="">Changelog</a></li>
+                    <li><a href="">View More</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <!-- End -->
+          </div>
+          <!-- End -->
+          <div class="flex flex-col w-[405px] gap-[40px]">
+            <div class="text-white">
+              <h5 class="font-sans font-bold">Follow Us On Instagram</h5>
+            </div>
+            <div class="flex flex-wrap gap-1 md:gap-[15px]">
+              <div><img src="Image/asset/img/img-8-home.png" alt=""></div>
+              <div><img src="Image/asset/img/img-9-home.png" alt=""></div>
+              <div><img src="Image/asset/img/img-10-home.png" alt=""></div>
+              <div><img src="Image/asset/img/img-11-home.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End -->
+      <div class="w-full flex justify-center">
+        <h4 class="text-[#ADB29E] font-sans">Copyright © 2024 SAO</h4>
+      </div>
+    </div>
+  </footer>
+  <script>
+      var xstatus = false;
+  window.onscroll = function () {
+    menu()
+  };
+
+  function menu() {
+    if (document.documentElement.scrollTop > 20) {
+      document.getElementById("topHeader").classList.add("bg-gray-200");
+      document.getElementById("topHeader").classList.add("bg-blend-color");
+      document.getElementById("topHeader").classList.remove("shadow-lg");
+    } else {
+      if (!xstatus && document.documentElement.scrollTop < 20) {
+        document.getElementById("topHeader").classList.remove("bg-gray-200");
+        document.getElementById("topHeader").classList.remove("shadow-lg");
+
+      }
+    }
+  };
+    function showHideMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('hidden');
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const filterButtons = document.querySelectorAll("button[id^='filter-']");
+
+      filterButtons.forEach(button => {
+        button.addEventListener("click", function () {
+          filterButtons.forEach(btn => btn.classList.remove("active-filter"));
+          button.classList.add("active-filter");
+          const category = button.id.split("-")[1];
+          filterMenuItems(category === "all" ? "all" : category);
+        });
+      });
+    });
+
+    function filterMenuItems(category) {
+      const menuItems = document.querySelectorAll(".menu-item");
+
+      menuItems.forEach(function (item) {
+        if (category === "all" || item.classList.contains(category)) {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>

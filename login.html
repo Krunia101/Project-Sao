@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form login</title>
+    <link rel="stylesheet" href="output.css">
+    <script defer src="validasi.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body class="flex bg-white">
+    <div class="bg-white h-screen w-1/2 flex justify-center items-center">
+        <div class="h-4/5 w-[65%] flex flex-col justify-between ">
+            <div class="flex justify-start mb-2"><h1 class="text-2xl font-bold text-black">Welcome Back 👋</h1></div> <!-- Mengurangi margin bawah dari h1 -->
+            <p class="text-gray-800 text-xl">Today is a new day. It's your day. You shape it. 
+                Sign in to start managing your projects.</p>
+            <form action="index.html" method="get">
+                <div class="">
+                    <p class="text-lg text-black m-4">Email</p>
+                    <input id="username" type="email" name="email" placeholder="Username" required class="w-full h-12 outline-none text-lg text-black px-6 bg-transparent border border-[#C9DBD5] rounded-lg " placeholder="Email">
+                </div>
+                <div class="relative">
+                    <p class="text-lg text-black m-4">Password</p>
+                    <input  id="password" type="password" name="password" placeholder="Password" required class="w-full h-12 outline-none text-lg text-black px-6 bg-transparent border border-[#C9DBD5] rounded-lg " placeholder="Password">
+                    <!-- <img src="src/img/view.png" alt="view "> -->
+                </div>
+
+                <div class="mt-2 flex justify-end">
+                    <a href="forrgot.html" class="text-sm text-[#CEA35A] mr-6">Forgot Password?</a>
+                </div>
+                <div class="mt-8 flex justify-center">
+                        <input type="submit" value="Login" class="p-2 w-full bg-black text-2xl font-bold text-white rounded-lg">
+                </div>
+            </form>
+            <div class="flex justify-center mt-4">
+                <p class="text-black text-sm">Dont have account? <a href="register.html" class="text-[#CEA35A]">Sign up</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="h-screen w-1/2 bg-login bg-top bg-no-repeat bg-cover overflow-hidden rounded-l-lg rounded-r-lg p-4">
+        <img src="Image/asset/img/Login Art3.png " class="w-full h-full" alt="">
+    </div>
+</body>
+</html>
+
+
+
+
